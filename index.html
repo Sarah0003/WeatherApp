@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="text-white">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand brand-color" href="#"><i class="fa fa-cloud me-1 text-white"></i>Weather app</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html" >Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Live camera</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="conatiner w-75 m-auto container-1 pt-5">
+        <div class="row">
+            <form class="form-content position-relative form-inputs ">
+                <input type="text" class="form-control rounded-pill search-input text-white w-100" id="Search" placeholder="Search" />
+                <button id="searchBtn" onclick="getWeather(this.value)" class="btn btn-primary mb-2 rounded-pill search-btn">Search</button>
+            </form>
+        </div>
+        <!-- <div class="forcast-content d-flex justify-content-center align-items-center"> -->
+        <div class="row mt-5 mb-5 gy-2">
+            <div class="col-md-4 today p-0">
+                <div class="header-content ps-5 pe-5 pt-2 w-100 text-white d-flex justify-content-between">
+                    <p id="day" class="day"></p>
+                    <p id="month"></p>
+                </div>
+                <div class="card-body text-white p-5">
+                    <h1 class="card-text" id="city"></h1>
+                    <div class="temp-content d-flex justify-content-start">
+                        <h1 class="temp" id="temp"></h1>
+                        <h1>°C</h1>
+                        <div id="icon" class="icon">
+                            <img src="" alt="">  
+
+                        </div>
+                    </div>
+                    <p id="condition" class="condition text-info">Sunny</p>
+                    <div class="icons">
+                        <img src="Images/icon-umberella.png" alt="umberella" /><span id="humidity">20%</span>
+                        <img src="Images/icon-compass.png" alt="compass" /><span id="windSpeed">18km/h</span>
+                        <img src="Images/icon-wind.png" alt="wind" /><span id="windDirection">East</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 p-0  tommorow">
+                <!-- <div class="tommorow bg-info"> -->
+                <div class="header-content ps-5 pe-5 pt-2 w-100 text-white">
+                    <p id="dayTwo" class="text-center day"></p>
+                </div>
+                <div class="card-body pt-5 d-flex justify-content-center align-items-center flex-column text-white">
+                    <div id="iconDayTwo" class="icon">
+                        <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="">  
+
+                    </div>
+                    <div class="temp-content d-flex justify-content-center">
+                        <h1 class="temp" id="tempDayTwo"></h1>
+                        <h1>°C</h1>
+                    </div>
+                    <p class="condition text-info"></p>
+
+                </div>
+
+                <!-- </div> -->
+            </div>
+            <div class="col-md-4 p-0 after">
+                <!-- <div class="bg-dark"> -->
+                <div class="header-content ps-5 pe-5 pt-2 w-100 text-white">
+                    <p id="dayThree" class="text-center day"></p>
+                </div>
+                <div class="card-body pt-5 d-flex justify-content-center align-items-center flex-column text-white">
+                    <div id="iconDayThree" class="icon">
+                      <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="">  
+                    </div>
+                    <div class="temp-content d-flex justify-content-center">
+                        <h1 class="temp" id="tempDayThree"></h1>
+                        <h1>°C</h1>
+                    </div>
+                    <p class="text-info condition"></p>
+
+                </div>
+                <!-- </div> -->
+
+            </div>
+        </div>
+    </div>
+
+   
+  <footer class="footer">
+
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-md-8  ps-5">
+          <form class="form-content position-relative form-inputs">
+            <input type="text" class="form-control rounded-pill  search-input w-75"  placeholder="Enter your email to subscribe..." />
+          </form>
+        </div>
+        <div class="col-md-3  d-flex justify-content-center align-items-center">
+          <div class="iconz rounded-circle d-flex align-items-center justify-content-center">
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <div class="iconz rounded-circle d-flex align-items-center justify-content-center">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="iconz rounded-circle d-flex align-items-center justify-content-center">
+            <i class="fa-brands fa-google"></i>
+          </div>
+          <div class="iconz rounded-circle d-flex align-items-center justify-content-center">
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+
+        </div>
+        <p class="text-muted text-center">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+      </div>
+    </div>
+  </footer>
+
+        <script src="js/main.js"></script>
+</body>
+
+</html>
+
+

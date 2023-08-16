@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/all.min.css" />
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="text-white">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Weather app</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Live camera</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="conatiner w-75 m-auto container-1 pt-5 ">
+    <div class="homePill row w-100 rounded-pill mb-2">
+      <div class="col-md-12 d-flex align-items-center justify-content-start">
+        <p class="mb-0 p-3"><a href="index.html" target="_blank" class="text-muted text-decoration-none me-1">Home</a><i
+            class="fa fa-arrow-right text-muted me-1"></i></p><span>Contact</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="contact col-md-5 p-0">
+        <div class="contact-box mb-3 d-flex flex-column align-items-start justify-content-center">
+          <div class="mapouter w-100">
+            <div class="gmap_canvas w-100">
+              <iframe class="w-100 h-100"
+                src="https://maps.google.com/maps?q=university%20of%20san%20francisco&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                id="gmap_canvas" frameborder="0" scrolling="no"></iframe>
+            </div>
+          </div>
+          <hr>
+          <p class="p-1 text-muted">
+            <i class="fa fa-location me-2 text-info"></i>Company Name INC.<br>2803 Avenue Street, Los Angeles
+          </p>
+          <div class="contact-icon d-flex justify-content-around">
+            <p class="p-1 text-muted">
+              <i class="fa fa-phone me-2 text-info"></i>+1 800 314 235
+            </p>
+            <p class="p-1 text-muted">
+              <i class="fa fa-mail-bulk me-2 text-info"></i>contact@companyname.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7 ">
+        <div class="contact-box">
+          <h1>Contact Us</h1>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore
+            ducimus, facilis,
+          </p>
+          <form action="" class="form-inputs">
+            <div class="row">
+              <input type="text" class="form-control rounded-pill search-input" placeholder="Enter your name..." />
+
+              <input type="text" class="form-control rounded-pill search-input" placeholder="Enter your email..." />
+            </div>
+            <div class="row">
+              <input type="text" class="form-control rounded-pill search-input" placeholder="Enter company name..." />
+              <input type="text" class="form-control rounded-pill search-input" placeholder="Enter your email to subscribe..." />
+            </div>
+            <textarea class=" w-100 p-3" name="" id="" cols="5" rows="5" placeholder="Message..."></textarea>          
+</form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-md-8  ps-5">
+          <form class="form-content position-relative form-inputs">
+            <input type="text" class="form-control rounded-pill  search-input w-75"  placeholder="Enter your email to subscribe..." />
+          </form>
+        </div>
+        <div class="col-md-3  d-flex justify-content-center align-items-center">
+          <div class="iconz rounded-circle d-flex align-items-center justify-content-center">
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <div class="iconz rounded-circle d-flex align-items-center justify-content-center">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="iconz rounded-circle d-flex align-items-center justify-content-center">
+            <i class="fa-brands fa-google"></i>
+          </div>
+          <div class="iconz rounded-circle d-flex align-items-center justify-content-center">
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+
+        </div>
+        <p class="text-muted text-center">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
