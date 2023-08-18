@@ -10,7 +10,7 @@ var windDirection = document.querySelector("#windDirection");
 
 
 async function getWeather(city) {
-  const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=931d4789cc8c4b189df134233231108&q=${city}&days=3`);
+  const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=931d4789cc8c4b189df134233231108&q=${city}&days=3`);
   var data = await response.json();
 
   console.log("data=", data);
